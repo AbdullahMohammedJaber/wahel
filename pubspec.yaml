@@ -41,6 +41,7 @@ dependencies:
   firebase_storage:
   bloc:
   flutter_bloc:
+  uuid:
 dev_dependencies:
   flutter_test:
     sdk: flutter
