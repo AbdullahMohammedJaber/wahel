@@ -42,6 +42,7 @@ dependencies:
   bloc:
   flutter_bloc:
   uuid:
+  animated_text_kit:
 dev_dependencies:
   flutter_test:
     sdk: flutter
