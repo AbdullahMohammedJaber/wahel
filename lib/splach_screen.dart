@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:waheel_app/screen_constance/selector_screen.dart';
 
 class SplachScreen extends StatefulWidget {
   const SplachScreen({Key? key}) : super(key: key);
@@ -9,6 +10,18 @@ class SplachScreen extends StatefulWidget {
 }
 
 class _SplachScreenState extends State<SplachScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 5)).then((value) {
+      Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (_) => SelectorScreen()),
+          (route) => false);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -54,7 +67,6 @@ class _SplachScreenState extends State<SplachScreen> {
                       alignment: Alignment.center,
                       duration: Duration(milliseconds: 1000),
                       rotateOut: false,
-
                     ),
                   ],
                   pause: const Duration(milliseconds: 800),
